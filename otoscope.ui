@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>596</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:rgb(85, 170, 255)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="ImgWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>30</y>
+      <width>1000</width>
+      <height>470</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startRecord">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>510</y>
+      <width>100</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color:red;
+	font: 10pt &quot;MS Shell Dlg 2&quot;;
+	color:white;
+	border-style:outset;
+	border-width:1px;
+	border-radius:10px;
+	border-color:black;
+	padding:4px;
+	min-width:10px;
+}
+
+QPushButton:hover{
+	background-color: rgb(255, 0, 0);
+	border-left:1px solid rgb(170, 0, 0); 
+	border-right:1px solid rgb(170, 0, 0);
+	border-bottom:5px solid rgb(170, 0, 0);
+}
+
+QPushButton:pressed{
+	background-color: rgb(212, 0, 0);
+	border-left:1px solid rgb(181, 0, 0); 
+	border-right:1px solid rgb(181, 0, 0);
+	border-top:5px solid rgb(181, 0, 0);
+}
+	font: 25 10pt &quot;Quicksand Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Start Record</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exitB">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>510</y>
+      <width>100</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color:red;
+	font: 10pt &quot;MS Shell Dlg 2&quot;;
+	color:white;
+	border-style:outset;
+	border-width:1px;
+	border-radius:10px;
+	border-color:black;
+	padding:4px;
+	min-width:10px;
+}
+
+QPushButton:hover{
+	background-color: rgb(255, 0, 0);
+	border-left:1px solid rgb(170, 0, 0); 
+	border-right:1px solid rgb(170, 0, 0);
+	border-bottom:5px solid rgb(170, 0, 0);
+}
+
+QPushButton:pressed{
+	background-color: rgb(212, 0, 0);
+	border-left:1px solid rgb(181, 0, 0); 
+	border-right:1px solid rgb(181, 0, 0);
+	border-top:5px solid rgb(181, 0, 0);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Turn Off</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="imageCapture">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>510</y>
+      <width>100</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color:red;
+	font: 10pt &quot;MS Shell Dlg 2&quot;;
+	color:white;
+	border-style:outset;
+	border-width:1px;
+	border-radius:10px;
+	border-color:black;
+	padding:4px;
+	min-width:10px;
+}
+
+QPushButton:hover{
+	background-color: rgb(255, 0, 0);
+	border-left:1px solid rgb(170, 0, 0); 
+	border-right:1px solid rgb(170, 0, 0);
+	border-bottom:5px solid rgb(170, 0, 0);
+}
+
+QPushButton:pressed{
+	background-color: rgb(212, 0, 0);
+	border-left:1px solid rgb(181, 0, 0); 
+	border-right:1px solid rgb(181, 0, 0);
+	border-top:5px solid rgb(181, 0, 0);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Capture</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopRecord">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>510</y>
+      <width>100</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color:red;
+	font: 10pt &quot;MS Shell Dlg 2&quot;;
+	color:white;
+	border-style:outset;
+	border-width:1px;
+	border-radius:10px;
+	border-color:black;
+	padding:4px;
+	min-width:10px;
+}
+
+QPushButton:hover{
+	background-color: rgb(255, 0, 0);
+	border-left:1px solid rgb(170, 0, 0); 
+	border-right:1px solid rgb(170, 0, 0);
+	border-bottom:5px solid rgb(170, 0, 0);
+}
+
+QPushButton:pressed{
+	background-color: rgb(212, 0, 0);
+	border-left:1px solid rgb(181, 0, 0); 
+	border-right:1px solid rgb(181, 0, 0);
+	border-top:5px solid rgb(181, 0, 0);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Stop Record</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>510</y>
+      <width>100</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color:red;
+	font: 10pt &quot;MS Shell Dlg 2&quot;;
+	color:white;
+	border-style:outset;
+	border-width:1px;
+	border-radius:10px;
+	border-color:black;
+	padding:4px;
+	min-width:10px;
+}
+
+QPushButton:hover{
+	background-color: rgb(255, 0, 0);
+	border-left:1px solid rgb(170, 0, 0); 
+	border-right:1px solid rgb(170, 0, 0);
+	border-bottom:5px solid rgb(170, 0, 0);
+}
+
+QPushButton:pressed{
+	background-color: rgb(212, 0, 0);
+	border-left:1px solid rgb(181, 0, 0); 
+	border-right:1px solid rgb(181, 0, 0);
+	border-top:5px solid rgb(181, 0, 0);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="galleryR">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>510</y>
+      <width>100</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color:red;
+	font: 10pt &quot;MS Shell Dlg 2&quot;;
+	color:white;
+	border-style:outset;
+	border-width:1px;
+	border-radius:10px;
+	border-color:black;
+	padding:4px;
+	min-width:10px;
+}
+
+QPushButton:hover{
+	background-color: rgb(255, 0, 0);
+	border-left:1px solid rgb(170, 0, 0); 
+	border-right:1px solid rgb(170, 0, 0);
+	border-bottom:5px solid rgb(170, 0, 0);
+}
+
+QPushButton:pressed{
+	background-color: rgb(212, 0, 0);
+	border-left:1px solid rgb(181, 0, 0); 
+	border-right:1px solid rgb(181, 0, 0);
+	border-top:5px solid rgb(181, 0, 0);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Gallery</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
